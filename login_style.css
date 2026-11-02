@@ -1,4 +1,117 @@
-.ievades_lauki{
-    text-align: center;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #626464 0%, #BBBCBC 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px;
+}
+
+
+.ievades_lauki {
+    background: #A5A6A6;
+    width: 100%;
+    max-width: 380px;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+.email_ievade,
+.parol_ievade {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.email_ievade input:focus,
+.parol_ievade input:focus {
+    border-color: #4C4E4E;
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+}
+
+.email_ievade label,
+.parol_ievade label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+.email_ievade input,
+.parol_ievade input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: #111827;
+    background: #f9fafb;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.email_ievade input::placeholder,
+.parol_ievade input::placeholder {
+    color: #9ca3af;
+}
+
+
+.email_ievade input:focus,
+.parol_ievade input:focus {
+    background: #ffffff;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+h3{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#pieslegties {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #4C4E4E;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#pieslegties:hover {
+    background: #3a3c3c;
+}
+
+#pieslegties:active {
+    transform: scale(0.98);
+}
+
+#pieslegties:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(76, 78, 78, 0.3);
+}
+
+
+@media (max-width: 480px) {
+    .ievades_lauki {
+        padding: 32px 24px;
+    }
 }
