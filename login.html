@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pieslēgšanās lapa</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="login_style.css">
-    </head>
-    <body>
-
-        <form action="" method="get" class="ievades_lauki">
-        
+<html lang="lv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pieslēgšanās lapa</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <form id="login-form" class="ievades_lauki">
         <h3 class="virsraksts">Pierakstīšanās</h3>
-        
+
         <div class="email_ievade">
             <label for="email_input">Ievadi savu E-pastu</label>
-            <input type="email" id="email_input">
+            <input type="email" id="email_input" name="email" required>
         </div>
 
         <div class="parol_ievade">
             <label for="parole_input">Ievadi savu paroli</label>
-            <input type="password" id="parole_input">
+            <input type="password" id="parole_input" name="password" required>
         </div>
 
-        <button id="pieslegties">Pieslēgties</button>
-        </form>
+        <button type="submit" id="pieslegties">Pieslēgties</button>
+        <p id="message" class="zinojums" role="status"></p>
+        <p class="saite">Nav konta? <a href="registrs.html">Reģistrēties</a></p>
+    </form>
 
-        <script src="login.js" async defer></script>
-    </body>
+    <script src="login.js" defer></script>
+</body>
 </html>

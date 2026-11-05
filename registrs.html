@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reģistrācija</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <form id="register-form" class="ievades_lauki">
+        <h3 class="virsraksts">Reģistrācija</h3>
+
+        <div class="email_ievade">
+            <label for="username_input">Lietotājvārds</label>
+            <input type="text" id="username_input" name="username" required>
+        </div>
+
+        <div class="email_ievade">
+            <label for="email_input">E-pasts</label>
+            <input type="email" id="email_input" name="email" required>
+        </div>
+
+        <div class="parol_ievade">
+            <label for="parole_input">Parole (vismaz 6 rakstzīmes)</label>
+            <input type="password" id="parole_input" name="password" minlength="6" required>
+        </div>
+
+        <button type="submit" id="pieslegties">Reģistrēties</button>
+        <p id="message" class="zinojums" role="status"></p>
+        <p class="saite">Jau ir konts? <a href="login.html">Pieslēgties</a></p>
+    </form>
+
+    <script src="login.js" defer></script>
+</body>
+</html>
