@@ -115,3 +115,8 @@ h3{
         padding: 32px 24px;
     }
 }
+
+.zinojums { font-size: 14px; text-align: center; min-height: 18px; color: #b91c1c; }
+.zinojums.ok { color: #15803d; }
+.saite { font-size: 14px; text-align: center; color: #4b5563; }
+.saite a { color: #4C4E4E; font-weight: 600; }
